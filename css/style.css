@@ -1,0 +1,2826 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-hero-img img {
+    width: 100%;
+    height: 55rem;
+}
+
+/* header-section */
+#nav {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#nav .navbar-toggler {
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#nav .navbar-toggler[aria-expanded="true"] {
+    transform: rotate(360deg);
+}
+
+#nav .navbar-toggler[aria-expanded="true"] span {
+    transform: rotate(45deg);
+}
+
+#nav .navbar-toggler[aria-expanded="true"] span::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#nav .navbar-toggler[aria-expanded="true"] span::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+#nav .navbar-toggler span::before {
+    content: "";
+    width: 2.3rem;
+    height: 0.3rem;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -11px;
+    transition: all 0.3s;
+}
+
+#nav .navbar-toggler span {
+    width: 2.3rem;
+    height: 0.3rem;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+}
+
+#nav .navbar-toggler span::after {
+    content: "";
+    width: 2.3rem;
+    height: 0.3rem;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    transition: all 0.3s;
+}
+
+#nav .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#nav .navbar-brand {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#nav .nav-link {
+    color: #fff;
+    margin-left: 1.5rem;
+    font-size: 17px;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+#nav .nav-link:hover {
+    color: #00bbf0;
+}
+
+#nav #home {
+    margin-left: 54rem;
+}
+
+#nav .active {
+    color: #00bbf0;
+    font-weight: 500;
+}
+
+#nav #search {
+    font-size: 0.9rem;
+}
+
+/* End header section */
+/* slider section */
+.slider-section {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+}
+
+#carousel-inner {
+    width: 100%;
+}
+
+#carousel .row {
+    padding: 4rem 0 0 0;
+    height: 40rem;
+    margin-left: 8rem;
+}
+
+#carousel {
+    margin-top: 6rem;
+    margin-left: -5rem;
+}
+
+#carousel h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#carousel p {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #fff;
+}
+
+#carousel .btn {
+    background-color: #00bbf0;
+    border-radius: 0;
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+#carousel .btn:hover {
+    cursor: pointer;
+    background-color: #00bcf0b0;
+}
+
+#carousel .btn a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#carousel img {
+    animation: hero 5s ease infinite;
+    width: 32rem;
+    height: auto;
+    margin-top: -3rem;
+    margin-left: 5rem;
+}
+
+@keyframes hero {
+    0% {
+        transform: translateY(-45px);
+    }
+
+    50% {
+        transform: translateY(45px);
+    }
+
+    100% {
+        transform: translateY(-45px);
+    }
+}
+
+#indicators {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    margin-top: -8rem;
+}
+
+#indicators.active {
+    background-color: #00bbf0;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+/* End slider section */
+/* our services section */
+.our-services {
+    margin-top: 6rem;
+}
+
+.title-our-services {
+    font-weight: 700;
+}
+
+.part-of-title-our-services {
+    color: #00bbf0;
+}
+
+.discribtion-our-services {
+    font-size: 17px;
+}
+
+.our-services .row .card {
+    margin-top: -1rem;
+    width: 23rem;
+    border: none;
+    background-color: #f8f8f9;
+    padding: 0.3rem;
+}
+
+.our-services .card .card-img {
+    width: 5rem;
+    margin-left: 9rem;
+}
+
+.our-services .card .card-body .card-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.our-services .card .card-body .card-text {
+    font-size: 17px;
+}
+
+.our-services .card .card-body .btn:hover {
+    color: #00bbf0;
+}
+
+#our-services-button {
+    background-color: #00bbf0;
+    border-radius: 0;
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 5rem;
+    margin-left: -1.5rem;
+    transition: all 0.3s;
+}
+
+#our-services-button:hover {
+    cursor: pointer;
+    background-color: #017494d2;
+}
+
+#our-services-button a {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+/* End our services section */
+/* about us section */
+.about-us {
+    background-color: #00204a;
+    margin-top: 0rem;
+    color: #fff;
+}
+
+.title-about-us {
+    font-weight: 700;
+    padding-top: 6rem;
+}
+
+.part-of-title-about-us {
+    color: #00bbf0;
+}
+
+.discribtion-about-us {
+    font-size: 17px;
+}
+
+.row {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.img-about-us {
+    width: 35rem;
+}
+
+.detail-box p {
+    font-size: 17px;
+}
+
+#about-us-button {
+    background-color: #00bbf0;
+    border-radius: 0;
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+    transition: all 0.3s;
+}
+
+#about-us-button:hover {
+    cursor: pointer;
+    background-color: #017494d2;
+}
+
+#about-us-button a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* End about us section */
+/* why us section */
+.why-us {
+    margin-top: 6rem;
+}
+
+.title-why-us {
+    font-weight: 700;
+}
+
+.part-of-title-why-us {
+    color: #00bbf0;
+}
+
+.Questions .img-box {
+    width: 7rem;
+    height: 7rem;
+    border: 5px solid #00204a;
+    border-radius: 100%;
+    margin-left: 37rem;
+    margin-top: 3rem;
+}
+
+.Questions img {
+    margin-top: 1.2rem;
+    width: 3.9rem;
+}
+
+.Questions h3 {
+    font-size: 1.4rem;
+    margin-top: 1.3rem;
+    font-weight: 700;
+}
+
+.Questions p {
+    font-size: 17px;
+}
+
+#why-us-button {
+    background-color: #00bbf0;
+    border-radius: 0;
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    transition: all 0.3s;
+}
+
+#why-us-button:hover {
+    cursor: pointer;
+    background-color: #017494d2;
+}
+
+#why-us-button a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* End why us section */
+/* our team section */
+.our-team {
+    background-color: #00204a;
+    color: #fff;
+}
+
+.title-our-team {
+    font-weight: 700;
+    padding-top: 6rem;
+}
+
+.our-team .card {
+    background: linear-gradient(to bottom, #002759, #002b64);
+    color: #fff;
+    height: 20rem;
+    width: 24rem;
+}
+
+.our-team .card .card-img {
+    width: 7.5rem;
+    margin-top: 1.7rem;
+    margin-left: 8.2rem;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+.our-team .card .card-title {
+    color: #00bbf0;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.our-team .card .card-text {
+    font-size: 1.1rem;
+}
+
+.our-team .card .card-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-team .card .card-icons i {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.our-team .card .card-icons i:hover {
+    color: #00bbf0;
+    cursor: pointer;
+}
+
+/* End our team section */
+/* customers section */
+.customers {
+    margin-bottom: 8rem;
+}
+
+.title-customers {
+    font-weight: 700;
+    padding-top: 6rem;
+}
+
+.part-of-title-customers {
+    color: #00bbf0;
+}
+
+.swiper-container {
+    height: 28rem;
+}
+
+.customers .card {
+    width: 35rem;
+    height: 15.5rem;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.322);
+    padding: 1.2rem;
+    margin-top: 4rem;
+    border-radius: 0;
+    margin-left: 4rem;
+    display: inline-block;
+}
+
+.customers .card img {
+    width: 6rem;
+    height: 6rem;
+    margin-top: -4rem;
+    margin-left: 1rem;
+    border-radius: 100%;
+}
+
+.customers .card .card-title {
+    font-weight: 600;
+}
+
+.customers .card .card-subtitle {
+    font-weight: 400;
+}
+
+.customers .card .card-text {
+    margin-top: 1.1rem;
+    font-size: 1rem;
+}
+
+.customers .swiper-button-prev::after {
+    content: "";
+}
+
+.customers .swiper-button-next::after {
+    content: "";
+}
+
+.customers .swiper-button-prev {
+    top: initial;
+    bottom: 0;
+    width: initial;
+    height: initial;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.customers .swiper-button-next {
+    top: initial;
+    bottom: 0;
+    width: initial;
+    height: initial;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.customers .swiper-button-prev {
+    left: 48.1%;
+}
+
+.customers .swiper-button-next {
+    right: 44%;
+}
+
+/* End customers section */
+/* info section */
+.info {
+    background-color: #00204a;
+    color: #fff;
+    height: 21.5rem;
+    margin-top: 0rem;
+}
+
+.info i {
+    font-size: 1rem;
+}
+
+.info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 0.5rem;
+    transition: all 0.5s;
+}
+
+.info p:hover {
+    color: #00bbf0;
+    cursor: pointer;
+}
+
+.info a i {
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+    margin-top: 0.8rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.info a i:hover {
+    color: #00bbf0;
+}
+
+.info ul li {
+    line-height: 2.2rem;
+    list-style: none;
+}
+
+.info ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: -2rem;
+}
+
+.info ul li a:hover {
+    color: #00bbf0;
+}
+
+.info form input {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.6rem;
+    width: 16rem;
+}
+
+.info form input::placeholder {
+    color: #fff;
+}
+
+.info button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.5rem 5.8rem 0.5rem 5.8rem;
+    color: #fff;
+    background-color: #00bbf0;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.info button:hover {
+    cursor: pointer;
+    background-color: #017494d2;
+}
+
+/* End info section */
+/* footer section */
+footer p {
+    padding: 0.6rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.09rem;
+}
+
+/* End footer section */
+/* Media Queres */
+@media all and (max-width: 390px) {
+    .bg-hero {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 24.4rem;
+        height: 56rem;
+    }
+
+    .bg-hero-img img {
+        display: none;
+    }
+
+    /* header section */
+    #nav {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 24.4rem;
+        z-index: 99;
+    }
+
+    #nav .navbar-toggler {
+        display: block;
+        margin-top: -0.5rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #nav #home {
+        margin-left: 0.8rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 24.4rem;
+    }
+
+    .carousel-inner {
+        height: 48rem;
+    }
+
+    #carousel .row {
+        margin-left: 0;
+    }
+
+    #carousel {
+        margin-top: 0;
+        margin-left: -0.5rem;
+    }
+
+    #carousel h1 {
+        font-size: 2rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 15px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 22rem;
+        height: auto;
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: 2rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 24.4rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+    }
+
+    #our-services-button {
+        margin-left: 1rem;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 24.4rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 23rem;
+        height: auto;
+        margin-left: 0.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 17px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 24.4rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 8rem;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 24.4rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 6.3rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 24.4rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 1rem;
+    }
+
+    .customers .card {
+        width: 24rem;
+        height: 17rem;
+        margin-left: 0;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 36%;
+    }
+
+    .customers .swiper-button-next {
+        right: 36%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 65rem;
+        width: 24.4rem;
+    }
+
+    .info #address {
+        margin-top: 0rem;
+    }
+
+    .info h2 {
+        margin-top: 3rem;
+    }
+
+    .info form input {
+        width: 23rem;
+    }
+
+    .info button {
+        width: 23rem;
+    }
+
+    /* End info section */
+    /* footer section */
+
+    #footer {
+        width: 24.4rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    /* End footer section */
+}
+
+@media screen and (min-width: 391px) and (max-width: 576px) {
+    .bg-hero {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 35.7rem;
+        height: 66rem;
+
+    }
+
+    .bg-hero-img img {
+        display: none;
+    }
+
+    /* header section */
+    #nav {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 35.7rem;
+        z-index: 99;
+    }
+
+    #nav .navbar-toggler {
+        display: block;
+        margin-top: -0.5rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #nav #home {
+        margin-left: 1.2rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 35.7rem;
+    }
+
+    .carousel-inner {
+        height: 55rem;
+    }
+
+    #carousel .row {
+        margin-left: 0;
+    }
+
+    #carousel {
+        margin-top: 0;
+        margin-left: -0.5rem;
+    }
+
+    #carousel h1 {
+        font-size: 2.8rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 17px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 34rem;
+        height: auto;
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: 1rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 35.7rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 14.5rem;
+    }
+
+    #our-services-button {
+        margin-left: 1rem;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 35.7rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 35rem;
+        height: auto;
+        margin-left: 0.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 17px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 35.7rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 13rem;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 35.7rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 31.5rem;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 12rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 35.7rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 1rem;
+    }
+
+    .customers .card {
+        width: 36rem;
+        height: 17rem;
+        margin-left: -1rem;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 44%;
+    }
+
+    .customers .swiper-button-next {
+        right: 37%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 65rem;
+        width: 35.7rem;
+        margin-top: 6rem;
+    }
+
+    .info #address {
+        margin-top: 0rem;
+    }
+
+    .info h2 {
+        margin-top: 3rem;
+    }
+
+    .info form input {
+        width: 34rem;
+    }
+
+    .info button {
+        width: 34rem;
+    }
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 35.7rem;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .bg-hero {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        height: 66rem;
+        width: 47.4rem;
+    }
+
+    .bg-hero-img img {
+        display: none;
+    }
+
+    /* header section */
+    #nav {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 47.4rem;
+        z-index: 99;
+    }
+
+    #nav .navbar-toggler {
+        display: block;
+        margin-top: -0.5rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #nav #home {
+        margin-left: 1.2rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 47.4rem;
+    }
+
+    .carousel-inner {
+        height: 56rem;
+    }
+
+    #carousel .row {
+        margin-left: -2rem;
+        margin-top: 1rem;
+    }
+
+    #carousel {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 2.9rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 15px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 34rem;
+        height: auto;
+        margin-top: 0rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: 1rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 47.4rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 14rem;
+    }
+
+    #our-services-button {
+        margin-left: 1rem;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 47.4rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 35rem;
+        height: auto;
+        margin-left: 0.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 17px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 47.4rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 13rem;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 47.4rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: -20rem;
+        margin-left: 24.5rem;
+    }
+
+    #card-4 {
+        margin-top: -20rem;
+        margin-left: 24.5rem;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 6rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 47.4rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 1rem;
+    }
+
+    .swiper-container {
+        height: 28rem;
+    }
+
+    .customers .card {
+        width: 36rem;
+        height: 17rem;
+        margin-left: -1rem;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 44%;
+    }
+
+    .customers .swiper-button-next {
+        right: 36%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 65rem;
+        width: 47.4rem;
+        margin-top: 6rem;
+    }
+
+    .info #address {
+        margin-top: 0rem;
+    }
+
+    .info h2 {
+        margin-top: 3rem;
+    }
+
+    .info form input {
+        width: 34rem;
+    }
+
+    .info button {
+        width: 34rem;
+    }
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 47.4rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .bg-hero {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 61.8rem;
+        height: 38rem;
+    }
+
+    .bg-hero-img img {
+        display: none;
+    }
+
+    /* header section */
+    #nav {
+        background: linear-gradient(130deg, #231a6f, #0f054c);
+        width: 61.8rem;
+        z-index: 99;
+    }
+
+    #nav .navbar-toggler {
+        display: block;
+        margin-top: -0.5rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #nav #home {
+        margin-left: 1.2rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 61.8rem;
+    }
+
+    .carousel-inner {
+        height: 31rem;
+    }
+
+    #carousel .row {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    #carousel {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 2.7rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 14px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 20rem;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: -7rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 61.8rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-body .card-title {
+        margin-left: 0.5rem;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 4rem;
+    }
+
+    #our-services-button {
+        font-size: 1rem;
+        width: 9.5rem;
+        height: 2.6rem;
+        margin-left: 0;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 61.8rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 20rem;
+        height: auto;
+        margin-left: 0.2rem;
+        margin-top: 4rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 15px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.7rem;
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 61.8rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 18rem;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 61.8rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 27rem;
+        margin-left: 2.8rem;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: 3rem;
+        margin-left: 0.3rem;
+    }
+
+    #card-4 {
+        margin-top: 3rem;
+        margin-left: 0.3rem;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 9.8rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 61.8rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 0rem;
+    }
+
+    .customers .card {
+        width: 20rem;
+        height: 18rem;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 43%;
+    }
+
+    .customers .swiper-button-next {
+        right: 42%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 37rem;
+        width: 61.8rem;
+        margin-top: 6rem;
+    }
+
+    .info #address {
+        margin-top: 0;
+    }
+
+    .info #info {
+        margin-top: 0;
+    }
+
+    .info h2 {
+        margin-top: 3rem;
+    }
+
+    .info p {
+        font-size: 1.06rem;
+    }
+
+    .info span {
+        font-size: 1.06rem;
+    }
+
+    .info form input {
+        width: 21rem;
+    }
+
+    .info button {
+        width: 21rem;
+    }
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 61.8rem;
+    }
+
+    footer p {
+        font-size: 1.01rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+
+    /* End footer section */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .bg-hero-img img {
+        display: block;
+        width: 85.2rem;
+        height: 45rem;
+    }
+
+    /* header section */
+    #nav {
+        width: 85.2rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        padding: auto;
+    }
+
+    #nav #home {
+        margin-left: 36rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 85.3rem;
+    }
+
+    .carousel-inner {
+        height: 38rem;
+    }
+
+    #carousel .row {
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+
+    #carousel {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 2.7rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 14px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 30rem;
+        height: auto;
+        margin-top: -7rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: -9rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 85.3rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-body .card-title {
+        margin-left: 0.5rem;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 8rem;
+    }
+
+    #our-services-button {
+        font-size: 1rem;
+        width: 9.5rem;
+        height: 2.6rem;
+        margin-left: 0;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 85.3rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 33rem;
+        height: auto;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 15px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.7rem;
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 85.3rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 26rem;
+        text-align: center;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 85.3rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    #card-4 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 6.5rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 85.3rem;
+        margin-bottom: 8rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 0rem;
+    }
+
+    .customers .card {
+        width: 27rem;
+        height: 16rem;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 45%;
+    }
+
+    .customers .swiper-button-next {
+        right: 44%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 24rem;
+        width: 85.2rem;
+        margin-top: -1rem;
+    }
+
+    .info #address {
+        margin-top: 0;
+    }
+
+    .info #info {
+        margin-top: 0;
+    }
+
+    .info h2 {
+        font-size: 1.4rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .info span {
+        font-size: 1rem;
+    }
+
+    .info form input {
+        font-size: 1rem;
+        width: 15rem;
+    }
+
+    .info button {
+        font-size: 1rem;
+    }
+
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 85.3rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .bg-hero-img img {
+        display: block;
+        width: 85.2rem;
+        height: 45rem;
+    }
+
+    /* header section */
+    #nav {
+        width: 85.2rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        padding: auto;
+    }
+
+    #nav #home {
+        margin-left: 36rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 85.3rem;
+    }
+
+    .carousel-inner {
+        height: 38rem;
+    }
+
+    #carousel .row {
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+
+    #carousel {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 2.7rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 14px;
+    }
+
+    #carousel .btn {
+        font-size: 17px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 30rem;
+        height: auto;
+        margin-top: -7rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: -9rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 85.3rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-body .card-title {
+        margin-left: 0.5rem;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 8rem;
+    }
+
+    #our-services-button {
+        font-size: 1rem;
+        width: 9.5rem;
+        height: 2.6rem;
+        margin-left: 0;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 85.3rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 33rem;
+        height: auto;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 15px;
+    }
+
+    #about-us-button {
+        font-size: 17px;
+        height: 2.7rem;
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 85.3rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 31rem;
+        text-align: center;
+    }
+
+    #why-us-button {
+        font-size: 17px;
+        height: 2.8rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 85.3rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    #card-4 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 6.5rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 85.3rem;
+        margin-bottom: 8rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 0rem;
+    }
+
+    .customers .card {
+        width: 33rem;
+        height: 16rem;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 45%;
+    }
+
+    .customers .swiper-button-next {
+        right: 45%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 24rem;
+        width: 85.2rem;
+        margin-top: -1rem;
+    }
+
+    .info #address {
+        margin-top: 0;
+    }
+
+    .info #info {
+        margin-top: 0;
+    }
+
+    .info h2 {
+        font-size: 1.4rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .info span {
+        font-size: 1rem;
+    }
+
+    .info form input {
+        font-size: 1rem;
+        width: 15rem;
+    }
+
+    .info button {
+        font-size: 1rem;
+    }
+
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 85.3rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1484px) {
+    .bg-hero-img img {
+        display: block;
+        width: 99rem;
+        height: 63rem;
+    }
+
+    /* header section */
+    #nav {
+        width: 99rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        padding: auto;
+    }
+
+    #nav #home {
+        margin-left: 50rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 99rem;
+    }
+
+    .carousel-inner {
+        height: 56rem;
+    }
+
+    #carousel .row {
+        margin-left: 2rem;
+        margin-top: 8rem;
+    }
+
+    #carousel {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 3rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 17px;
+    }
+
+    #carousel .btn {
+        font-size: 19px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 38rem;
+        height: auto;
+        margin-top: -7rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: -14rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 99rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-body .card-title {
+        margin-left: 0.5rem;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 9rem;
+    }
+
+    #our-services-button {
+        font-size: 1.1rem;
+        width: 10rem;
+        height: 2.8rem;
+        margin-left: 0;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 99rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 38rem;
+        height: auto;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 18px;
+    }
+
+    #about-us-button {
+        font-size: 19px;
+        height: 2.9rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 99rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 37rem;
+        text-align: center;
+    }
+
+    #why-us-button {
+        font-size: 19px;
+        height: 3rem;
+        width: 12rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 99rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 23.5rem;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    #card-4 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 8rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 99rem;
+        margin-bottom: 8rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 0rem;
+    }
+
+    .customers .card {
+        width: 38rem;
+        height: 17rem;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 46%;
+    }
+
+    .customers .swiper-button-next {
+        right: 46%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 24rem;
+        width: 99rem;
+        margin-top: 0;
+    }
+
+    .info #address {
+        margin-top: 0;
+    }
+
+    .info #info {
+        margin-top: 0;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .info span {
+        font-size: 1.1rem;
+    }
+
+    .info form input {
+        font-size: 1.3rem;
+        width: 18rem;
+    }
+
+    .info button {
+        font-size: 1.2rem;
+        width: 18rem;
+    }
+
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 99rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1485px) and (max-width: 1620px) {
+    .bg-hero-img img {
+        display: block;
+        width: 101rem;
+        height: 63rem;
+    }
+
+    /* header section */
+    #nav {
+        width: 101rem;
+    }
+
+    #nav .navbar-btn {
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    #nav .nav-link {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        padding: auto;
+    }
+
+    #nav #home {
+        margin-left: 53rem;
+    }
+
+    /* End header section */
+    /* slider section */
+    .slider-section {
+        width: 101rem;
+    }
+
+    .carousel-inner {
+        height: 56rem;
+    }
+
+    #carousel .row {
+        margin-left: 6rem;
+        margin-top: 8rem;
+    }
+
+    #carousel {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    #carousel h1 {
+        font-size: 3rem;
+        margin-top: -4rem;
+    }
+
+    #carousel p {
+        font-size: 17px;
+    }
+
+    #carousel .btn {
+        font-size: 19px;
+        height: 2.8rem;
+    }
+
+    #carousel img {
+        width: 38rem;
+        height: auto;
+        margin-top: -7rem;
+        margin-left: 0.2rem;
+    }
+
+    #indicators {
+        margin-top: -14rem;
+    }
+
+    /* End slider section */
+    /* our services section */
+    .our-services {
+        width: 101rem;
+    }
+
+    .title-our-services {
+        font-size: 2.1rem;
+    }
+
+    .our-services .row .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .our-services .card .card-body .card-title {
+        margin-left: 0.5rem;
+    }
+
+    .our-services .card .card-img {
+        margin-left: 10rem;
+    }
+
+    #our-services-button {
+        font-size: 1.1rem;
+        width: 10rem;
+        height: 2.8rem;
+        margin-left: 0;
+    }
+
+    /* End our services section */
+    /* about us section */
+    .about-us {
+        width: 101rem;
+    }
+
+    .title-about-us {
+        font-size: 2.1rem;
+    }
+
+    .discribtion-about-us {
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .img-about-us {
+        width: 38rem;
+        height: auto;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
+
+    .detail-box-about-us h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .detail-box-about-us p {
+        font-size: 18px;
+    }
+
+    #about-us-button {
+        font-size: 19px;
+        height: 2.9rem;
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* End about us section */
+    /* why us section */
+    .why-us {
+        width: 101rem;
+    }
+
+    .title-why-us {
+        font-size: 2rem;
+    }
+
+    .Questions .img-box {
+        margin-left: 37.5rem;
+        text-align: center;
+    }
+
+    #why-us-button {
+        font-size: 19px;
+        height: 3rem;
+        width: 12rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    /* End why us section */
+    /* our team section */
+    .our-team {
+        width: 101rem;
+    }
+
+    .title-our-team {
+        font-size: 2.1rem;
+        margin-bottom: -3rem;
+    }
+
+    .our-team .card {
+        height: 20rem;
+        width: 23.5rem;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    #card-2 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    #card-4 {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .our-team .card .card-img {
+        margin-left: 8rem;
+    }
+
+    /* End our team section */
+    /* customers section */
+    .customers {
+        width: 101rem;
+        margin-bottom: 8rem;
+    }
+
+    .title-customers {
+        font-size: 2rem;
+    }
+
+    .part-of-title-customers {
+        margin-left: 0rem;
+    }
+
+    .customers .card {
+        width: 38.5rem;
+        height: 17rem;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.322);
+    }
+
+    .customers .swiper-button-prev {
+        left: 46%;
+    }
+
+    .customers .swiper-button-next {
+        right: 46%;
+    }
+
+    /* End customers section */
+    /* info section */
+    .info {
+        height: 24rem;
+        width: 101rem;
+        margin-top: 0;
+    }
+
+    .info #address {
+        margin-top: 0;
+    }
+
+    .info #info {
+        margin-top: 0;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .info span {
+        font-size: 1.1rem;
+    }
+
+    .info form input {
+        font-size: 1.3rem;
+        width: 18rem;
+    }
+
+    .info button {
+        font-size: 1.2rem;
+        width: 18rem;
+    }
+
+
+    /* End info section */
+    /* footer section */
+    #footer {
+        width: 101rem;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+        padding: 1.6rem 0;
+        margin: 0 1rem;
+    }
+}
